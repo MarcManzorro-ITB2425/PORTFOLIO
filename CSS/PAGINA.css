@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
+/* Estilos generales para el body */
+body {
+    background-color: #000000; /* Fondo gris claro para toda la página */
+    color: #007bff; /* Texto oscuro por defecto */
+    font-family: "Oswald", sans-serif; /* Fuente más bonita */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Estilo para el título "NUESTROS PROYECTOS" */
+header h1 {
+    background-color: #007bff; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+    font-size: 36px; /* Aumentamos el tamaño del título */
+}
+
+/* Estilo para el subtítulo "Victor, Jan y Marc" */
+header h2 {
+    text-align: center;
+    color: #ffffff; /* Texto negro */
+    font-size: 24px; /* Ajustamos el tamaño del subtítulo */
+}
+
+/* Estilo para el contenedor de los proyectos */
+.titulo-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espacio entre los proyectos */
+    padding: 40px 0;
+    background-color: #000000; /* Fondo gris claro */
+    color: #ffffff; /* Texto negro */
+}
+
+/* Estilo para los proyectos individuales */
+.titulo-container .proyecto {
+    background-color: #1e1e1e; /* Fondo blanco para cada proyecto */
+    color: #007bff; /* Texto negro */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Aumento el tamaño del proyecto */
+}
+
+.titulo-container .proyecto h2 {
+    font-size: 24px; /* Aumento el tamaño del título de cada proyecto */
+    margin-bottom: 10px;
+}
+
+.titulo-container .proyecto img {
+    width: 100%;/* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        color: #007bff ;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Encabezado principal */
+    header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+    }
+    
+    /* Título principal */
+    header h1:first-of-type {
+        color: #007bff; /* Azul cian */
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    /* Subtítulo */
+    header h1:nth-of-type(2) {
+        color: #007bff; /* Azul más apagado */
+        font-size: 1.5em;
+        margin: 0;
+    }
+    
+    /* Imagen de perfil (logo) */
+    header img {
+        width: 80px;
+        height: auto;
+        border-radius: 8px;
+        margin-left: auto;
+    }
+    
+    /* Texto descriptivo */
+    h3 {
+        color: #007bff; /* Mismo color que el subtítulo */
+        font-size: 1em;
+        max-width: 600px;
+        text-align: justify;
+        margin-top: 20px;
+    }
+     /* Ajustamos las imágenes para que se adapten al tamaño del contenedor */
+    height: auto;
+    border-radius: 8px;
+}
+
+.titulo-container a {
+    color: #007bff; /* Enlaces en negro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.titulo-container a:hover {
+    color: #ffffff; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para el enlace "Ver más" */
+.ver-mas {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Fondo gris claro */
+    margin-top: 20px;
+}
+
+.ver-mas a {
+    color: #007bff; /* Texto negro */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ver-mas a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Estilo para el formulario de contacto */
+.formulario-contacto {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Fondo blanco */
+    color: #ffffff; /* Texto negro */
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.formulario-contacto a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.formulario-contacto a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+

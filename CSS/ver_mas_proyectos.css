@@ -1,0 +1,123 @@
+/* General styles */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Project container */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Individual project styles */
+.project {
+    position: relative;
+    width: 250px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h2 a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Hover effect content */
+.project-hover {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    opacity: 0;
+}
+
+.project:hover .project-hover {
+    max-height: 400px; /* Ajustar al contenido necesario */
+    padding: 10px;
+    opacity: 1;
+}
+
+.project-hover img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-hover ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.project-hover li {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Add subtle hover scaling */
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+.left-button {
+    position: fixed; /* Para que siempre esté visible */
+    top: 40px; /* Distancia desde el borde superior */
+    left: 40px; /* Distancia desde el borde izquierdo */
+    z-index: 999; /* Asegura que esté encima de otros elementos */
+}
+
+.left-button a {
+    margin-left: 0;
+    color: #000000; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    background-color: #ffffff; /* Fondo */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita subrayado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones */
+}
+
+.left-button a:hover {
+    background-color: #1505f1; /* Fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}

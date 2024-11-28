@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/formulari.css"> <!-- Vincula tu archivo CSS -->
+        <title>Formulario</title>
+    </head>
+    <body>
+        <header>
+            <h1>FORMULARI</h1>
+        </header>
+        <div class="left-button">
+            <a href="../index.html">Home</a>
+        </div>
+        
+        <main>
+            <form>
+                <label for="fnom">Nombre:</label><br>
+                <input type="text" id="fnom" name="fnom" required><br><br>
+                
+                <label for="fapellido">Apellido:</label><br>
+                <input type="text" id="fapellido" name="fapellido" required><br><br>
+                
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email"
+                       pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                       required title="Introduce un correo válido (ejemplo@dominio.com)"><br><br>
+                
+                <label for="fnum">Número de teléfono:</label><br>
+                <input type="text" id="fnum" name="fnum"
+                       pattern="^[0-9]{9}$" required title="Ingrese un número de teléfono válido de 9 dígitos (sin espacios ni guiones)"><br><br>
+                
+                <label for="fmensaje">Mensaje:</label><br>
+                <input type="text" id="fmenasje" name="fmenasje" required><br><br>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+        </script>
+    </body>
+</html>

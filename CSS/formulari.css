@@ -1,0 +1,150 @@
+/* Establecer la fuente Oswald para todo el contenido */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif; /* Fuente Oswald */
+}
+
+/* Fondo de la página */
+body {
+    background-color: #000000; /* Fondo negro */
+    color: #007bff; /* Color de texto principal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Hace que el body ocupe toda la altura de la pantalla */
+    flex-direction: column;
+    font-family: "Oswald", sans-serif; /* Fuente Oswald */
+
+}
+
+/* Cabecera */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Oswald", sans-serif; /* Fuente Oswald */
+
+}
+
+h1 {
+    color: #012ea8; /* Azul cian para el título */
+    font-size: 3em;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #333333; /* Fondo gris oscuro para el formulario */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px; /* Limita el tamaño del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: "Oswald", sans-serif; /* Fuente Oswald */
+
+}
+
+/* Estilo de las etiquetas */
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1a1a1a; /* Fondo oscuro para los inputs */
+    color: #e0e0e0; /* Texto claro en los inputs */
+    font-size: 1em;
+}
+
+/* Estilo para los campos de entrada cuando están enfocados */
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #4ee0e0; /* Cambia el borde a azul cian cuando el input está enfocado */
+    outline: none;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #007bff; /* Azul cian */
+    color: #000000; /* Texto negro */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #98a2d8; /* Un tono más claro al hacer hover */
+}
+
+/* Estilo de los campos de entrada con validación */
+input:invalid {
+    border-color: #ff6666; /* Rojo si la entrada es inválida */
+}
+
+input:valid {
+    border-color: #66ff66; /* Verde si la entrada es válida */
+}
+
+/* Estilo de los mensajes de validación */
+input:invalid + span {
+    color: #ff6666;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+input:valid + span {
+    color: #66ff66;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Capa superpuesta semi-transparente */
+body::before {
+    content: ""; /* Crea un pseudo-elemento */
+    position: absolute; /* Lo posiciona sobre el fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la pantalla */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../imagenes/bcn.jpg);
+    background-color: rgba(0, 0, 0, 0.753); /* Fondo negro con opacidad */
+    z-index: -1; /* Lo coloca detrás del contenido */
+}
+
+.left-button {
+    position: fixed; /* Para que siempre esté visible */
+    top: 40px; /* Distancia desde el borde superior */
+    left: 40px; /* Distancia desde el borde izquierdo */
+    z-index: 999; /* Asegura que esté encima de otros elementos */
+}
+
+.left-button a {
+    margin-left: 0;
+    color: #000000; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    background-color: #007bff; /* Fondo */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita subrayado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones */
+}
+
+.left-button a:hover {
+    background-color: #f0f0f0; /* Fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
